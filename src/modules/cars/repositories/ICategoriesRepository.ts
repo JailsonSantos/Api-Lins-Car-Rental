@@ -1,15 +1,16 @@
-import { Category } from "../model/Category";
+import { Category } from "../entities/Category";
 
-// DTO = Data Transfer Object - (um Objeto responsável em transferir dados entre uma classe e outra);
-export interface ICreateCategoryDTO {
+// DTO => Data transfer object
+interface ICreateCategoryDTO {
   name: string;
   description: string;
 }
 
+
 interface ICategoriesRepository {
-  findByName(name: string): Category;
-  list(): Category[];
-  create({ name, description }: ICreateCategoryDTO): void;
+  findByName(name: string): Promise<Category | undefined>;
+  list(): Promise<Category[]>;
+  create({ name, description }: ICreateCategoryDTO): Promise<void>;
 }
 
-export { ICategoriesRepository }
+export { ICategoriesRepository, ICreateCategoryDTO };
