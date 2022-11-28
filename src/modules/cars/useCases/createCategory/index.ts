@@ -1,9 +1,7 @@
-// Controller fica responsável por enviar requisição e resposta
+/* // Controller fica responsável por enviar requisição e resposta
 import { CategoriesRepository } from "../../repositories/implementations/CategoriesRepository";
 import { CreateCategoryController } from "./CreateCategoryController";
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
-
-console.log("Create category");
 
 export default (): CreateCategoryController => {
   const categoriesRepository = new CategoriesRepository();
@@ -14,3 +12,4 @@ export default (): CreateCategoryController => {
 
   return createCategoryController;
 }
+ */

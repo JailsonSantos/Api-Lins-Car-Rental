@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 import express from "express";
 import { router } from "./routes";
+import "./shared/container";
 
 // Documentação da API
 import swaggerUi from 'swagger-ui-express';
