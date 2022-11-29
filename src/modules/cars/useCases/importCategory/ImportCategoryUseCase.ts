@@ -1,8 +1,9 @@
 
-import { parse as csvParser } from 'csv-parse';
 import fs from 'fs'; // File system, função nativa do Nodejs
 import { inject, injectable } from "tsyringe";
-import { ICategoriesRepository } from '../../repositories/ICategoriesRepository';
+import { parse as csvParser } from 'csv-parse';
+import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRepository';
+
 
 interface IImportCategory {
   name: string;

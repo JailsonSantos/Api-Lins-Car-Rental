@@ -1,11 +1,10 @@
 import { container } from 'tsyringe'
-import { IUsersRepository } from '../../modules/accounts/repositories/IUsersRepository';
-import { ICategoriesRepository } from '../../modules/cars/repositories/ICategoriesRepository'
-import { CategoriesRepository } from '../../modules/cars/repositories/implementations/CategoriesRepository'
-import { SpecificationsRepository } from '../../modules/cars/repositories/implementations/SpecificationsRepository';
-import { ISpecificationsRepository } from '../../modules/cars/repositories/ISpecificationsRepository';
-
-import { UsersRepository } from '../../modules/accounts/repositories/implementations/UsersRepository';
+import { IUsersRepository } from '@modules/accounts/repositories/IUsersRepository';
+import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRepository';
+import { UsersRepository } from '@modules/accounts/infra/typeorm/repositories/UsersRepository';
+import { ISpecificationsRepository } from '@modules/cars/repositories/ISpecificationsRepository';
+import { CategoriesRepository } from '@modules/cars/infra/typeorm/resositories/CategoriesRepository';
+import { SpecificationsRepository } from '@modules/cars/infra/typeorm/resositories/SpecificationsRepository';
 
 //ICategoriesRepository
 container.registerSingleton<ICategoriesRepository>(
@@ -19,6 +18,7 @@ container.registerSingleton<ISpecificationsRepository>(
   SpecificationsRepository
 );
 
+// IUsersRepository
 container.registerSingleton<IUsersRepository>(
   "UsersRepository",
   UsersRepository

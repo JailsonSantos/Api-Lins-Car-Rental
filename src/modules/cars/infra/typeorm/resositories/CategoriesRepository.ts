@@ -1,9 +1,6 @@
-// Repositórios ficam responsável por fazer as ações nos bancos de dados, manipulação de dados
-import { Category } from "../../entities/Category";
-
+import { Category } from "../entities/Category";
 import { getRepository, Repository } from "typeorm";
-
-import { ICategoriesRepository, ICreateCategoryDTO } from "../ICategoriesRepository";
+import { ICategoriesRepository, ICreateCategoryDTO } from "@modules/cars/repositories/ICategoriesRepository";
 
 class CategoriesRepository implements ICategoriesRepository {
   private repository: Repository<Category>;

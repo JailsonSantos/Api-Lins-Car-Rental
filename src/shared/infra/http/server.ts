@@ -4,17 +4,17 @@ import express, {
   Response,
   NextFunction
 } from "express";
-import "./shared/container";
+import "@shared/container";
 import "express-async-errors";
-import { router } from "./routes";
+import { router } from "@shared/infra/http/routes";
 
 // Documentação da API
 import swaggerUi from 'swagger-ui-express';
-import swaggerFile from './swagger.json';
+import swaggerFile from '../../../swagger.json';
 
 // Bando de dados
-import './database';
-import { AppError } from './errors/AppError';
+import '@shared/infra/typeorm';
+import { AppError } from '@shared/errors/AppError';
 
 const app = express();
 
