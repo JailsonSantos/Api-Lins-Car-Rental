@@ -4,13 +4,10 @@ Uma API de controle de locação de Automóveis;
 # Cadastro de carro
 **REQUISITOS FUNCIONAIS**
 Deve ser possivel cadastrar um novo carro;
-Deve ser possivel listar todas as categorias;
-
 **REGRA DE NEGÓCIO**
 Não deve ser possível cadastrar um carro com uma placa já existente;
-Não deve ser possível alterar a placa de um carro já cadastrado;
 O carro deve ser cadastrado o status disponível por padrão;
-O usuário responsável pelo cadastro deve ser um usuário administrador;
+* O usuário responsável pelo cadastro deve ser um usuário administrador;
 
 # Listagem de carros
 **REQUISITOS FUNCIONAIS**

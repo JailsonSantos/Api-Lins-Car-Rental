@@ -13,9 +13,10 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerFile from '../../../swagger.json';
 
 // Bando de dados
-import '@shared/infra/typeorm';
 import { AppError } from '@shared/errors/AppError';
+import createConnection from '@shared/infra/typeorm';
 
+createConnection();
 const app = express();
 
 app.use(express.json());
