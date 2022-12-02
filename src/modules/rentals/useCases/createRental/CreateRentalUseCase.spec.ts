@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import dayjs from 'dayjs';
 import { AppError } from "@shared/errors/AppError";
 import { CreateRentalUseCase } from "./CreateRentalUseCase";

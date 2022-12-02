@@ -6,7 +6,7 @@ import { IRentalsRepository } from '@modules/rentals/repositories/IRentalsReposi
 import { CarsRepository } from '@modules/cars/infra/typeorm/resositories/CarsRepository';
 import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRepository';
 import { ICarsImagesRepository } from '@modules/cars/repositories/ICarsImagesRepository';
-import { UsersRepository } from '@modules/accounts/infra/typeorm/repositories/UsersRepository';
+import { UsersRepository } from "../../modules/accounts/infra/typeorm/repositories/UsersRepository";
 import { ISpecificationsRepository } from '@modules/cars/repositories/ISpecificationsRepository';
 import { RentalsRepository } from '@modules/rentals/infra/typeorm/repositories/RentalRepository';
 import { CategoriesRepository } from '@modules/cars/infra/typeorm/resositories/CategoriesRepository';
